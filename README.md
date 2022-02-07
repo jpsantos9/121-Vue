@@ -1,5 +1,5 @@
 # 121 Vue
-## How to Setup Vue
+## How to Setup Vue 2
 1. Run ``` npm install -g vue-cli```, this command will install vue-cli globally
 2. Run ```vue init <template-name> <project-name>```, this command pulls a webpack template (ex. webpack-simple), prompts for some information and generate a project in directory/folder new-project
 3. Change directory to your project folder ```cd <new-project>```
