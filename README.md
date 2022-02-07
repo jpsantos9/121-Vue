@@ -7,3 +7,4 @@
 5. Run ```npm run dev```, this command will start your local http server, open the browser and your default hosted web page will be shown
 ## Install Vue Router
 1. If you are using vue cli you can run ```vue add router```
+2. If you are using npm you can run ```npm install vue-router@4```
