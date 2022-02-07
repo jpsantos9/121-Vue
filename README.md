@@ -8,3 +8,5 @@
 ## Install Vue Router
 1. If you are using vue cli you can run ```vue add router```
 2. If you are using npm you can run ```npm install vue-router@4```
+## Install Axios
+1. Run ```npm install --save axios vue-axios```
