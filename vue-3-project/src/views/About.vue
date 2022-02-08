@@ -11,6 +11,9 @@
   </div>
 </template>
 <script>
+// another way of calling store
+import { mapState, mapGetters } from 'vuex'
+
 export default {
   name: 'about',
   data() {
@@ -23,8 +26,20 @@ export default {
     const api = 'https://v2.jokeapi.dev/joke/Any?safe-mode'
     this.axios.get(api).then((response) => {
         this.joke = response.data
-        console.log(response.data)
       })
+    
+    // sample code for calling state
+    console.log('before: ' + this.$store.state.count)
+    this.$store.commit('increment')   // sample code for calling mutations
+    console.log('after: ' + this.count)
+
+    console.log(this.$store.getters.fullName) // sample code for getters
+    console.log(this.fullName)
   },
+  computed: {
+    // map this.count to store.state.count
+    ...mapState(['count']),
+    ...mapGetters(['fullName'])
+  }
 }
 </script>
