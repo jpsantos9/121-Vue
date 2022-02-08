@@ -10,3 +10,5 @@
 2. If you are using npm you can run ```npm install vue-router@4```
 ## Install Axios
 1. Run ```npm install --save axios vue-axios```
+## Install Vuex
+1. run ```npm install vuex@next --save```
